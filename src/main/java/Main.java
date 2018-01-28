@@ -11,7 +11,7 @@ class Main {
     public static void main(String[] args) throws InterruptedException {
         String baseURL = "https://www.goodreads.com/quotes/tag/books?page=";
         ArrayList<Quote> quotesArrayList = new ArrayList<Quote>();
-        int numPages = 1;
+        int numPages = 100;
         for (int i = 1; i <= numPages; i++) {
             try {
                 String url = baseURL + i;
